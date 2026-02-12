@@ -71,28 +71,6 @@ function IconCopy(props: { className?: string }) {
     );
 }
 
-function IconSpark(props: { className?: string }) {
-    return (
-        <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-            className={props.className}
-        >
-            <path
-                d="M12 2l1.2 4.3L17.5 8l-4.3 1.2L12 13.5l-1.2-4.3L6.5 8l4.3-1.7L12 2Z"
-                fill="currentColor"
-                opacity="0.9"
-            />
-            <path
-                d="M18.5 13l.8 2.8 2.7.7-2.7.8-.8 2.7-.8-2.7-2.7-.8 2.7-.7.8-2.8Z"
-                fill="currentColor"
-                opacity="0.75"
-            />
-        </svg>
-    );
-}
-
 export default function Home() {
     const [keyText, setKeyText] = useState("");
     const [message, setMessage] = useState("");
@@ -154,7 +132,7 @@ export default function Home() {
             <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
                 <header className="mb-10 flex flex-col items-start justify-between gap-6 sm:mb-14 sm:flex-row sm:items-center">
                     <div className="flex items-center gap-3">
-                        <div className="grid size-11 place-items-center rounded-2xl bg-white/60 ring-1 ring-black/10 shadow-[var(--shadow)] backdrop-blur dark:bg-black/30 dark:ring-white/10">
+                        <div className="grid size-11 place-items-center rounded-2xl bg-white/60 ring-1 ring-black/10 shadow-(--shadow) backdrop-blur dark:bg-black/30 dark:ring-white/10">
                             <IconLock className="size-5 text-zinc-900 dark:text-zinc-100" />
                         </div>
                         <div>
@@ -191,7 +169,7 @@ export default function Home() {
                 </header>
 
                 <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-                    <section className="rounded-3xl bg-[var(--card)] p-5 ring-1 ring-[var(--card-border)] shadow-[var(--shadow)] backdrop-blur sm:p-7">
+                    <section className="rounded-3xl bg-(--card) p-5 ring-1 ring-(--card-border) shadow-(--shadow) backdrop-blur sm:p-7">
                         <div className="mb-5 flex items-center justify-between">
                             <h2 className="text-sm font-semibold tracking-wide text-zinc-900 dark:text-zinc-100">
                                 Input
@@ -253,7 +231,7 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <section className="rounded-3xl bg-[var(--card)] p-5 ring-1 ring-[var(--card-border)] shadow-[var(--shadow)] backdrop-blur sm:p-7">
+                    <section className="rounded-3xl bg-(--card) p-5 ring-1 ring-(--card-border) shadow-(--shadow) backdrop-blur sm:p-7">
                         <div className="mb-5 flex items-center justify-between gap-3">
                             <div>
                                 <h2 className="text-sm font-semibold tracking-wide text-zinc-900 dark:text-zinc-100">
